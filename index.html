@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to ShopEasy</h2>
+            <p>Your one-stop shop for the latest and greatest products.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/PRODUCT-2.jpg" alt="Product 1">
+                <h3>CLOTHING</h3>
+                <p>₹3,999</p>
+                <button onclick="addToCart('Wireless Headphones', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/PRODUCT-1.jpg" alt="Product 2">
+                <h3>SHOES</h3>
+                <p>₹4,999</p>
+                <button onclick="addToCart('Smart Watch', 99.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/PRODUCT-3.jpg" alt="Product 3">
+                <h3>SPECTACLES</h3>
+                <p>₹5,999</p>
+                <button onclick="addToCart('Bluetooth Speaker', 39.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Why Shop With Us?</h2>
+        <p>We offer high-quality products at unbeatable prices. Fast shipping, easy returns, and 24/7 customer support.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

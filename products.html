@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Listing -->
+    <section class="product-section">
+        <h2>Our Latest Products</h2>
+        <p>Click on any product to explore more brands and options.</p>
+        <div class="product-grid">
+
+            <div class="product">
+                <div class="product-image" onclick="viewProduct(event, 'SHOES', 'Starting from ₹3,999', 'images/PRODUCT-1.jpg', 'Top Brands: Nike, Adidas, Puma.')">
+                    <img src="images/PRODUCT-1.jpg" alt="SHOES">
+                    
+                </div>
+                <h3>SHOES</h3>
+                <p class="price">Starting from ₹3,999</p>
+                <p class="brands">Top Brands: Nike, Adidas, Puma</p>
+                <a href="shoes.html" onclick="viewProduct(event, 'SHOES', 'Starting from ₹3,999', 'images/PRODUCT-1.jpg', 'Top Brands: Nike, Adidas, Puma.')" class="view-more">View More</a>
+            </div>
+
+            <div class="product">
+                <div class="product-image" onclick="viewProduct(event, 'CLOTHING', 'Starting from ₹4,999', 'images/PRODUCT-2.jpg', 'Top Brands: Levi’s, Zara, H&M.')">
+                    <img src="images/PRODUCT-2.jpg" alt="CLOTHING">
+                </div>
+                <h3>CLOTHING</h3>
+                <p class="price">Starting from ₹4,999</p>
+                <p class="brands">Top Brands: Levi’s, Zara, H&M</p>
+                <a href="clothing.html" onclick="viewProduct(event, 'CLOTHING', 'Starting from ₹4,999', 'images/PRODUCT-2.jpg', 'Top Brands: Levi’s, Zara, H&M.')" class="view-more">View More</a>
+            </div>
+
+            <div class="product">
+                <div class="product-image" onclick="viewProduct(event, 'SPECTACLES', 'Starting from ₹5,999', 'images/PRODUCT-3.jpg', 'Top Brands: Ray-Ban, Oakley, Fastrack.')">
+                    <img src="images/PRODUCT-3.jpg" alt="SPECTACLES">
+                </div>
+                <h3>SPECTACLES</h3>
+                <p class="price">Starting from ₹5,999</p>
+                <p class="brands">Top Brands: Ray-Ban, Oakley, Fastrack</p>
+                <a href="spect.html" onclick="viewProduct(event, 'SPECTACLES', 'Starting from ₹5,999', 'images/PRODUCT-3.jpg', 'Top Brands: Ray-Ban, Oakley, Fastrack.')" class="view-more">View More</a>
+            </div>
+
+            <div class="product">
+                <div class="product-image" onclick="viewProduct(event, 'BAGS', 'Starting from ₹55,999', 'images/PRODUCT-4.jpg', 'Top Brands: Samsonite, American Tourister, Wildcraft.')">
+                    <img src="images/PRODUCT-4.jpg" alt="BAGS">
+                </div>
+                <h3>BAGS</h3>
+                <p class="price">Starting from ₹55,999</p>
+                <p class="brands">Top Brands: Samsonite, American Tourister, Wildcraft</p>
+                <a href="bag.html" onclick="viewProduct(event, 'BAGS', 'Starting from ₹55,999', 'images/PRODUCT-4.jpg', 'Top Brands: Samsonite, American Tourister, Wildcraft.')" class="view-more">View More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

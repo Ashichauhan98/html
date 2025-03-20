@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectacles - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Spectacles Section -->
+    <section class="product-section">
+        <h2>Explore Our Spectacles Collection</h2>
+        <p>Trendy and stylish eyewear for every occasion!</p>
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/spectacles1.jpg" alt="Round Frame Glasses">
+                <h3>Round Frame Glasses</h3>
+                <p class="price">₹999 - ₹3,499</p>
+                <button onclick="addToCart('Round Frame Glasses', 999)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/spectacles2.jpg" alt="Aviator Glasses">
+                <h3>Aviator Glasses</h3>
+                <p class="price">₹1,299 - ₹4,999</p>
+                <button onclick="addToCart('Aviator Glasses', 1299)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/spectacles3.jpg" alt="Cat Eye Glasses">
+                <h3>Cat Eye Glasses</h3>
+                <p class="price">₹1,599 - ₹5,499</p>
+                <button onclick="addToCart('Cat Eye Glasses', 1599)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/spectacles4.jpg" alt="Blue Light Blocking Glasses">
+                <h3>Blue Light Blocking Glasses</h3>
+                <p class="price">₹1,799 - ₹3,999</p>
+                <button onclick="addToCart('Blue Light Blocking Glasses', 1799)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Products -->
+    <div class="back-to-products">
+        <a href="products.html" class="btn">Back to Products</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

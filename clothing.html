@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Clothing Category -->
+    <section class="product-section">
+        <h2>Explore Our Clothing Collection</h2>
+        <p>Trendy outfits for every occasion!</p>
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/clothing1.jpg" alt="Men's T-Shirt">
+                <h3>Men's T-Shirt</h3>
+                <p class="price">₹799 - ₹1,999</p>
+                <button onclick="addToCart('Men\'s T-Shirt', 799)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/clothing2.jpg" alt="Women's Dress">
+                <h3>Women's Dress</h3>
+                <p class="price">₹1,499 - ₹3,999</p>
+                <button onclick="addToCart('Women\'s Dress', 1499)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/clothing3.jpg" alt="Men's Jeans">
+                <h3>Men's Jeans</h3>
+                <p class="price">₹1,299 - ₹3,499</p>
+                <button onclick="addToCart('Men\'s Jeans', 1299)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/clothing4.jpg" alt="Women's Jacket">
+                <h3>Women's Jacket</h3>
+                <p class="price">₹2,999 - ₹5,499</p>
+                <button onclick="addToCart('Women\'s Jacket', 2999)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/clothing5.jpg" alt="Unisex Hoodie">
+                <h3>Unisex Hoodie</h3>
+                <p class="price">₹1,799 - ₹3,999</p>
+                <button onclick="addToCart('Unisex Hoodie', 1799)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Products -->
+    <div class="back-to-products">
+        <a href="products.html" class="btn">Back to Products</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

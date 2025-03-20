@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shoes Category -->
+    <section class="product-section">
+        <h2>Explore Our Shoe Collection</h2>
+        <p>Find the perfect pair for every occasion!</p>
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/shoe1.jpg" alt="Nike Running Shoes">
+                <h3>Nike Running Shoes</h3>
+                <p class="price">₹3,999 - ₹7,999</p>
+                <button onclick="addToCart('Nike Running Shoes', 3999)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/shoe2.jpg" alt="Adidas Sneakers">
+                <h3>Adidas Sneakers</h3>
+                <p class="price">₹4,499 - ₹8,499</p>
+                <button onclick="addToCart('Adidas Sneakers', 4499)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/shoe3.jpg" alt="Puma Sports Shoes">
+                <h3>Puma Sports Shoes</h3>
+                <p class="price">₹3,799 - ₹6,999</p>
+                <button onclick="addToCart('Puma Sports Shoes', 3799)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/shoe4.jpg" alt="Woodland Leather Shoes">
+                <h3>Woodland Leather Shoes</h3>
+                <p class="price">₹5,999 - ₹9,999</p>
+                <button onclick="addToCart('Woodland Leather Shoes', 5999)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/shoe5.jpg" alt="Reebok Running Shoes">
+                <h3>Reebok Running Shoes</h3>
+                <p class="price">₹3,999 - ₹6,999</p>
+                <button onclick="addToCart('Reebok Running Shoes', 3999)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Products -->
+    <div class="back-to-products">
+        <a href="products.html" class="btn">Back to Products</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

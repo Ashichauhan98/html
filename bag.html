@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bags - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bags Section -->
+    <section class="product-section">
+        <h2>Explore Our Bags Collection</h2>
+        <p>Stylish and durable bags for every need!</p>
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/bag1.jpg" alt="Leather Handbag">
+                <h3>Leather Handbag</h3>
+                <p class="price">₹2,499 - ₹7,999</p>
+                <button onclick="addToCart('Leather Handbag', 2499)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/bag2.jpg" alt="Travel Backpack">
+                <h3>Travel Backpack</h3>
+                <p class="price">₹1,999 - ₹6,499</p>
+                <button onclick="addToCart('Travel Backpack', 1999)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/bag3.jpg" alt="Laptop Bag">
+                <h3>Laptop Bag</h3>
+                <p class="price">₹1,499 - ₹4,999</p>
+                <button onclick="addToCart('Laptop Bag', 1499)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/bag4.jpg" alt="Tote Bag">
+                <h3>Tote Bag</h3>
+                <p class="price">₹899 - ₹3,499</p>
+                <button onclick="addToCart('Tote Bag', 899)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Products -->
+    <div class="back-to-products">
+        <a href="products.html" class="btn">Back to Products</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
